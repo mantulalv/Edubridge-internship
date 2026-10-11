@@ -1,0 +1,33 @@
+# Assignment 2: Loan Eligibility using Logistic Regression
+
+Predicts whether a person is eligible for a loan from their CIBIL score and the loan amount they need.
+Graph: x-axis = CIBIL score, y-axis = loan amount required.
+
+The dataset `data/loan_data.csv` is synthetic (made-up) practice data with 500 applicants.
+
+## Files
+```
+data/loan_data.csv                    applicant_id, cibil_score, loan_amount, eligible (1 = yes, 0 = no)
+notebooks/loan_eligibility.ipynb      full workflow
+```
+
+## How to run
+```
+pip install pandas numpy matplotlib scikit-learn jupyter
+jupyter notebook notebooks/loan_eligibility.ipynb
+```
+Run all cells from the top.
+
+## Steps in the notebook
+1. Load and inspect the data
+2. Check missing values and duplicates
+3. Scatter graph (CIBIL score vs loan amount, coloured by eligible or not)
+4. Train/test split (80/20) and scaling
+5. Train the logistic regression model
+6. Accuracy and confusion matrix (84% on the test data)
+7. Graph with the decision boundary
+8. Predict for new people
+
+## Result
+Higher CIBIL score and smaller loan amount give a better chance of approval.
+This is practice data, so the numbers are not from a real bank.
