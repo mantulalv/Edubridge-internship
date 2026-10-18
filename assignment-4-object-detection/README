@@ -1,0 +1,61 @@
+# Assignment 4: Live Object Detection with YOLOv8 + MobileNetV2
+
+A webcam program that finds objects in real time and names them using two pre-trained models.
+
+- **YOLOv8 (nano)** detects the objects and draws a box around each one.
+- **MobileNetV2** (trained on ImageNet) looks at the cropped picture inside each box and gives a second, more specific name.
+
+Example label on screen: `cup 91% | MobileNet: coffee mug 83%`
+
+<!-- After you run the program, take a screenshot, save it as screenshots/demo.png and remove this line and the arrows around the next one.
+![Demo](screenshots/demo.png)
+-->
+
+## How it works
+1. Open the webcam with OpenCV and read one frame at a time.
+2. YOLOv8 finds objects in the frame (80 everyday object types) and returns boxes with a confidence score.
+3. For the most confident boxes (up to 5 per frame), crop the object, resize it to 224x224, and give it to MobileNetV2.
+4. Draw the box and the labels on the frame, plus the object count and FPS, then show it in a window.
+5. Press `q` to quit.
+
+## Files
+```
+detect.py          main program
+requirements.txt   libraries to install
+screenshots/       put your screenshot here
+```
+
+## Setup
+Python 3.9 to 3.11 is recommended. The install is large (about 1 to 2 GB because of TensorFlow and PyTorch), so use a good connection.
+```
+python -m pip install -r requirements.txt --default-timeout=100
+```
+The first run downloads the model weights (`yolov8n.pt` and the MobileNetV2 ImageNet weights), so internet is needed once.
+
+## Run
+```
+python detect.py
+```
+Allow camera access if Windows asks. Press **q** in the video window to exit.
+
+## Settings (top of `detect.py`)
+| Setting | Default | Meaning |
+|---|---|---|
+| `CONF` | 0.35 | Minimum YOLO confidence. Lower shows more boxes, higher shows fewer wrong ones |
+| `MAX_CLASSIFY` | 5 | How many boxes MobileNet names per frame (keeps the video smooth) |
+| `yolov8n.pt` | nano | Use `yolov8s.pt` for better accuracy but slower speed |
+
+## Limitations
+- YOLO only knows 80 object types (person, phone, laptop, cup, bottle, chair and so on). Other objects get no box.
+- YOLO and MobileNet use different label lists, so their names for one object can differ.
+- Both models are pre-trained and not trained on our own data.
+- Accuracy depends on lighting, distance and camera quality.
+- Speed depends on the computer. It runs on the CPU unless a GPU is set up.
+
+## Troubleshooting
+- **Webcam does not open:** close other apps using the camera, or change `VideoCapture(0)` to `VideoCapture(1)`.
+- **No boxes:** improve the light, show a common object, or lower `CONF`.
+- **Slow video:** lower `MAX_CLASSIFY` to 2 or 3.
+
+## Tools used
+Python, OpenCV, Ultralytics YOLOv8, TensorFlow/Keras MobileNetV2, NumPy.
