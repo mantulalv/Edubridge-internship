@@ -81,7 +81,3 @@ Then update the `features` list and the `price` target column to match your data
 ## Tech Stack
 
 Python · pandas · NumPy · scikit-learn · joblib · Streamlit
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file.
