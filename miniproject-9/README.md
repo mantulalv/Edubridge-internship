@@ -3,7 +3,7 @@
 TF-IDF + Logistic Regression over the 20 Newsgroups corpus, with a Streamlit app that
 predicts the topic of pasted text and shows the keywords behind the decision.
 
-**Developer:** mantulalv · **Repo:** https://github.com/mantulalv/Edubridge-internship/tree/main/miniprojects/miniproject-9
+**Developer:** mantulalv · **Repo:** https://github.com/mantulalv/Edubridge-internship/tree/main/miniproject-9
 
 ## Features
 

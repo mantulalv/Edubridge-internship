@@ -5,7 +5,7 @@ project. The original predicts a continuous price with linear regression; this
 mini project keeps the same five features and turns the problem into a binary
 classification: **is this house priced above or below the dataset median?**
 
-**Developer:** mantulalv · **Repo:** https://github.com/mantulalv/Edubridge-internship/tree/main/miniprojects/miniproject-10
+**Developer:** mantulalv · **Repo:** https://github.com/mantulalv/Edubridge-internship/tree/main/miniproject-10
 
 Original regression project:
 https://github.com/mantulalv/Edubridge-internship/tree/main/miniproject-5

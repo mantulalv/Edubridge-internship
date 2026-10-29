@@ -2,7 +2,7 @@
 
 TF-IDF + Naive Bayes / Logistic Regression spam classifier with an interactive Streamlit scorer.
 
-**Developer:** mantulalv · **Repo:** https://github.com/mantulalv/Edubridge-internship/tree/main/miniprojects/miniproject-6
+**Developer:** mantulalv · **Repo:** https://github.com/mantulalv/Edubridge-internship/tree/main/miniproject-6
 
 ## Features
 

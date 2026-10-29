@@ -7,16 +7,20 @@ venv/
 .ipynb_checkpoints/
 
 # Generated data (regenerate with each project's scripts)
-**/data/raw/
-**/data/processed/
-**/data/*.csv
+miniproject-6/data/raw/
+miniproject-6/data/processed/
+miniproject-7/data/*.csv
+miniproject-9/data/raw/
+miniproject-9/data/processed/
+miniproject-10/data/raw/
+miniproject-10/data/processed/
 
 # Trained models
-**/models/
+miniproject-*/models/
 
 # Generated outputs (keep the placeholder so folders exist)
-**/outputs/*
-!**/outputs/.gitkeep
+miniproject-*/outputs/*
+!miniproject-*/outputs/.gitkeep
 
 # Local config
 .env

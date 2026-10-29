@@ -3,7 +3,7 @@
 A small convolutional network trained on MNIST, wrapped in a Streamlit app that accepts
 an uploaded digit image and explains the prediction with class probabilities.
 
-**Developer:** mantulalv · **Repo:** https://github.com/mantulalv/Edubridge-internship/tree/main/miniprojects/miniproject-8
+**Developer:** mantulalv · **Repo:** https://github.com/mantulalv/Edubridge-internship/tree/main/miniproject-8
 
 ## Features
 

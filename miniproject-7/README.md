@@ -3,7 +3,7 @@
 Interactive cohort analytics for student performance: KPIs, department comparisons,
 semester trends, attendance bands and at-risk detection.
 
-**Developer:** mantulalv · **Repo:** https://github.com/mantulalv/Edubridge-internship/tree/main/miniprojects/miniproject-7
+**Developer:** mantulalv · **Repo:** https://github.com/mantulalv/Edubridge-internship/tree/main/miniproject-7
 
 ## Features
 
