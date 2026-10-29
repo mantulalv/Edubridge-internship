@@ -8,7 +8,7 @@ classification: **is this house priced above or below the dataset median?**
 **Developer:** mantulalv · **Repo:** https://github.com/mantulalv/Edubridge-internship/tree/main/miniprojects/miniproject-10
 
 Original regression project:
-https://github.com/mantulalv/Edubridge-internship/tree/main/assignment-5-house-price-prediction
+https://github.com/mantulalv/Edubridge-internship/tree/main/miniproject-5
 
 ## Why logistic regression?
 

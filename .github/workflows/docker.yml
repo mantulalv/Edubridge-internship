@@ -18,7 +18,7 @@ jobs:
 
       - uses: docker/build-push-action@v6
         with:
-          context: ./assignment-5-house-price-prediction
-          file: ./assignment-5-house-price-prediction/Dockerfile
+          context: ./miniproject-5
+          file: ./miniproject-5/Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/house-price-prediction:latest
