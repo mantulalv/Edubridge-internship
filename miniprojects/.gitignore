@@ -1,0 +1,25 @@
+# Python
+venv/
+.venv/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Generated data (regenerate with each project's scripts)
+**/data/raw/
+**/data/processed/
+**/data/*.csv
+
+# Trained models
+**/models/
+
+# Generated outputs (keep the placeholder so folders exist)
+**/outputs/*
+!**/outputs/.gitkeep
+
+# Local config
+.env
+.vscode/
+.DS_Store
+Thumbs.db
